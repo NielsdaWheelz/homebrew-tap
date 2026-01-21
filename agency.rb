@@ -5,13 +5,13 @@
 class Agency < Formula
   desc "Local-first runner manager for AI coding sessions"
   homepage "https://github.com/NielsdaWheelz/agency"
-  version "1.2.7"
+  version "1.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.7/agency_1.2.7_darwin_amd64.tar.gz"
-      sha256 "586943e53b8a306d27bf22825a8d8f6f0e39aba8c1a3bbcb817bed35032cbab1"
+      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.8/agency_1.2.8_darwin_amd64.tar.gz"
+      sha256 "df082ecc67afac356200b5ea094bf68fda157799fe4606b1b4d4da14bd4d5440"
 
       def install
         bin.install "agency"
@@ -20,8 +20,8 @@ class Agency < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.7/agency_1.2.7_darwin_arm64.tar.gz"
-      sha256 "97bdca101ccf93b1ba1fa20607401694a9233384ae88fc237d47ca7c566f76ca"
+      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.8/agency_1.2.8_darwin_arm64.tar.gz"
+      sha256 "afb21624ecb1f7718f7c67408390a0a926dd0a65779f074823233ae93c7acdbf"
 
       def install
         bin.install "agency"
@@ -33,8 +33,8 @@ class Agency < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.7/agency_1.2.7_linux_amd64.tar.gz"
-      sha256 "1f84588c84eeb3afd92929e469499228621df0954ea3ce9b52ba1f2ca477871c"
+      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.8/agency_1.2.8_linux_amd64.tar.gz"
+      sha256 "c168ddcede4c70a98758f1af5ce528cfdd909e1bb04d88e11f98c198f3f530c3"
       def install
         bin.install "agency"
         bash_completion.install "completions/agency.bash" => "agency"
@@ -42,8 +42,8 @@ class Agency < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.7/agency_1.2.7_linux_arm64.tar.gz"
-      sha256 "c141f260001942fceeb3cc3b1b98cb8e9ee3366c2bad84a16597f6daa119dbc3"
+      url "https://github.com/NielsdaWheelz/agency/releases/download/v1.2.8/agency_1.2.8_linux_arm64.tar.gz"
+      sha256 "f20dcc7e958841e065352a2159c203b15b91dca41138faba872e0a7bbc050437"
       def install
         bin.install "agency"
         bash_completion.install "completions/agency.bash" => "agency"
